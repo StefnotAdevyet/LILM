@@ -11,6 +11,11 @@
 		8BE4255B28D7781900AF5BEE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BE4255A28D7781900AF5BEE /* ContentView.swift */; };
 		8BE4255D28D7781B00AF5BEE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8BE4255C28D7781B00AF5BEE /* Assets.xcassets */; };
 		8BE4256028D7781B00AF5BEE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8BE4255F28D7781B00AF5BEE /* Preview Assets.xcassets */; };
+		8BE4256928D77CC900AF5BEE /* Garment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BE4256828D77CC900AF5BEE /* Garment.swift */; };
+		8BE4256B28D77F5000AF5BEE /* GarmentDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BE4256A28D77F5000AF5BEE /* GarmentDetail.swift */; };
+		8BE4256D28D7808800AF5BEE /* Cart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BE4256C28D7808800AF5BEE /* Cart.swift */; };
+		8BE4256F28D781C200AF5BEE /* GarmentService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BE4256E28D781C200AF5BEE /* GarmentService.swift */; };
+		8BE4257128D785D600AF5BEE /* MockService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BE4257028D785D600AF5BEE /* MockService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +24,11 @@
 		8BE4255A28D7781900AF5BEE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		8BE4255C28D7781B00AF5BEE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8BE4255F28D7781B00AF5BEE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		8BE4256828D77CC900AF5BEE /* Garment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Garment.swift; sourceTree = "<group>"; };
+		8BE4256A28D77F5000AF5BEE /* GarmentDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GarmentDetail.swift; sourceTree = "<group>"; };
+		8BE4256C28D7808800AF5BEE /* Cart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cart.swift; sourceTree = "<group>"; };
+		8BE4256E28D781C200AF5BEE /* GarmentService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GarmentService.swift; sourceTree = "<group>"; };
+		8BE4257028D785D600AF5BEE /* MockService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +61,7 @@
 		8BE4255728D7781900AF5BEE /* LILM */ = {
 			isa = PBXGroup;
 			children = (
+				8BE4256628D77C8C00AF5BEE /* Model */,
 				8BE4255828D7781900AF5BEE /* LILMApp.swift */,
 				8BE4255A28D7781900AF5BEE /* ContentView.swift */,
 				8BE4255C28D7781B00AF5BEE /* Assets.xcassets */,
@@ -65,6 +76,26 @@
 				8BE4255F28D7781B00AF5BEE /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		8BE4256628D77C8C00AF5BEE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8BE4256E28D781C200AF5BEE /* GarmentService.swift */,
+				8BE4257028D785D600AF5BEE /* MockService.swift */,
+				8BE4256728D77C9600AF5BEE /* Entities */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		8BE4256728D77C9600AF5BEE /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				8BE4256828D77CC900AF5BEE /* Garment.swift */,
+				8BE4256A28D77F5000AF5BEE /* GarmentDetail.swift */,
+				8BE4256C28D7808800AF5BEE /* Cart.swift */,
+			);
+			path = Entities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,6 +169,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				8BE4255B28D7781900AF5BEE /* ContentView.swift in Sources */,
+				8BE4256B28D77F5000AF5BEE /* GarmentDetail.swift in Sources */,
+				8BE4257128D785D600AF5BEE /* MockService.swift in Sources */,
+				8BE4256F28D781C200AF5BEE /* GarmentService.swift in Sources */,
+				8BE4256D28D7808800AF5BEE /* Cart.swift in Sources */,
+				8BE4256928D77CC900AF5BEE /* Garment.swift in Sources */,
 				8BE4255928D7781900AF5BEE /* LILMApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
