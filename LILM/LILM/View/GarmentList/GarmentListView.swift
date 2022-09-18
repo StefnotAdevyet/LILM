@@ -12,7 +12,15 @@ struct GarmentListView: View {
     @ObservedObject var viewModel: AnyViewModel<GarmentListState, Never>
     
     var body: some View {
-        Text("\(viewModel.state.garments.count)")
+        NavigationView {
+            List(viewModel.state.garments) { garment in
+                NavigationLink(destination: GarmentDetailView()) {
+                    GarmentRow(garment: garment)
+                }
+
+            }
+            .navigationTitle("Garment List")
+        }
     }
 }
 
