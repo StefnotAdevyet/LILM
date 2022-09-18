@@ -8,9 +8,9 @@
 import SwiftUI
 
 struct ContentView: View {
+    let viewModel = AnyViewModel(GarmentListViewModel(service: MockService()))
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        GarmentListView(viewModel: viewModel)
     }
 }
 

@@ -123,9 +123,10 @@
 		8BE4257628D79C7200AF5BEE /* View */ = {
 			isa = PBXGroup;
 			children = (
+				8BE4258A28D7C85A00AF5BEE /* Cart */,
+				8BE4258928D7C85100AF5BEE /* GarmentDetail */,
 				8BE4257828D79CAE00AF5BEE /* GarmentList */,
 				8BE4257728D79C7A00AF5BEE /* Utilities */,
-				8BE4258728D7C56F00AF5BEE /* GarmentDetailView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -147,6 +148,21 @@
 				8BE4258328D7AA2200AF5BEE /* GarmentListView.swift */,
 			);
 			path = GarmentList;
+			sourceTree = "<group>";
+		};
+		8BE4258928D7C85100AF5BEE /* GarmentDetail */ = {
+			isa = PBXGroup;
+			children = (
+				8BE4258728D7C56F00AF5BEE /* GarmentDetailView.swift */,
+			);
+			path = GarmentDetail;
+			sourceTree = "<group>";
+		};
+		8BE4258A28D7C85A00AF5BEE /* Cart */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Cart;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
