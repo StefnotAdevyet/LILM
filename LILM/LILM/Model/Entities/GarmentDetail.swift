@@ -13,7 +13,7 @@ struct GarmentDetail {
     var author: String
     var title: String
     var price: Double
-    var genre: [Genre]
+    var garmentStyle: [GarmentStyle]
     var kind: String
     var description: String
     var imageName: String
