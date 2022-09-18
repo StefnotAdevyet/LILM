@@ -12,7 +12,7 @@ struct GarmentRow: View {
     
     var body: some View {
         HStack {
-            GarmentImage(image: Image("person.fill"))
+            GarmentImage(image: Image(garment.imageName))
             VStack(alignment: .leading) {
                 Text(garment.title).font(.headline)
                 Text("by \(garment.author)").font(.subheadline).foregroundColor(.gray)
@@ -25,6 +25,6 @@ struct GarmentRow: View {
 
 struct GarmentRow_Previews: PreviewProvider {
     static var previews: some View {
-        GarmentRow(garment: Garment(id: 234, title: "brown", author: "me dude", price: 45.99, imageName: "person.fill"))
+        GarmentRow(garment: Garment(id: 234, title: "Silk Multi-Colored", author: "me dude", price: 45.99, imageName: "one"))
     }
 }
