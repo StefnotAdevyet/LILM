@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8B3827FD28D8194600800253 /* GarmentDetailLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B3827FC28D8194600800253 /* GarmentDetailLabel.swift */; };
+		8B3827FF28D8195800800253 /* GarmentDetailButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B3827FE28D8195800800253 /* GarmentDetailButton.swift */; };
+		8B38280128D8266F00800253 /* CartButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B38280028D8266F00800253 /* CartButtonView.swift */; };
 		8BE4255928D7781900AF5BEE /* LILMApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BE4255828D7781900AF5BEE /* LILMApp.swift */; };
 		8BE4255B28D7781900AF5BEE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BE4255A28D7781900AF5BEE /* ContentView.swift */; };
 		8BE4255D28D7781B00AF5BEE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8BE4255C28D7781B00AF5BEE /* Assets.xcassets */; };
@@ -29,6 +32,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8B3827FC28D8194600800253 /* GarmentDetailLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GarmentDetailLabel.swift; sourceTree = "<group>"; };
+		8B3827FE28D8195800800253 /* GarmentDetailButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GarmentDetailButton.swift; sourceTree = "<group>"; };
+		8B38280028D8266F00800253 /* CartButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartButtonView.swift; sourceTree = "<group>"; };
 		8BE4255528D7781900AF5BEE /* LILM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LILM.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8BE4255828D7781900AF5BEE /* LILMApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LILMApp.swift; sourceTree = "<group>"; };
 		8BE4255A28D7781900AF5BEE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -157,6 +163,8 @@
 			children = (
 				8BE4258728D7C56F00AF5BEE /* GarmentDetailView.swift */,
 				8BE4258B28D7F4A300AF5BEE /* GarmentDetailViewModel.swift */,
+				8B3827FC28D8194600800253 /* GarmentDetailLabel.swift */,
+				8B3827FE28D8195800800253 /* GarmentDetailButton.swift */,
 			);
 			path = GarmentDetail;
 			sourceTree = "<group>";
@@ -164,6 +172,7 @@
 		8BE4258A28D7C85A00AF5BEE /* Cart */ = {
 			isa = PBXGroup;
 			children = (
+				8B38280028D8266F00800253 /* CartButtonView.swift */,
 			);
 			path = Cart;
 			sourceTree = "<group>";
@@ -238,6 +247,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8B38280128D8266F00800253 /* CartButtonView.swift in Sources */,
 				8BE4255B28D7781900AF5BEE /* ContentView.swift in Sources */,
 				8BE4256B28D77F5000AF5BEE /* GarmentDetail.swift in Sources */,
 				8BE4257E28D7A5B400AF5BEE /* GarmentImage.swift in Sources */,
@@ -246,6 +256,7 @@
 				8BE4258028D7A7F400AF5BEE /* GarmentListState.swift in Sources */,
 				8BE4257A28D79CF100AF5BEE /* GarmentRow.swift in Sources */,
 				8BE4258428D7AA2200AF5BEE /* GarmentListView.swift in Sources */,
+				8B3827FF28D8195800800253 /* GarmentDetailButton.swift in Sources */,
 				8BE4257128D785D600AF5BEE /* MockService.swift in Sources */,
 				8BE4258C28D7F4A300AF5BEE /* GarmentDetailViewModel.swift in Sources */,
 				8BE4256F28D781C200AF5BEE /* GarmentService.swift in Sources */,
@@ -254,6 +265,7 @@
 				8BE4257328D7950D00AF5BEE /* ViewModel.swift in Sources */,
 				8BE4255928D7781900AF5BEE /* LILMApp.swift in Sources */,
 				8BE4258828D7C56F00AF5BEE /* GarmentDetailView.swift in Sources */,
+				8B3827FD28D8194600800253 /* GarmentDetailLabel.swift in Sources */,
 				8BE4257C28D7A24600AF5BEE /* GarmentStyle.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

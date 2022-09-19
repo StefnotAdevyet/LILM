@@ -49,11 +49,28 @@ struct GarmentDetailView: View {
                 .frame(height:20)
             HStack(spacing: 20) {
                 ForEach(0..<viewModel.state.garmentDetail.garmentStyle.count, id: \.self) { index in
-                    Text(self.viewModel.state.garmentDetail.garmentStyle[index].description)
+                    GarmentDetailLabel(text: self.viewModel.state.garmentDetail.garmentStyle[index].description)
                 }
                 Text(viewModel.state.garmentDetail.kind)
             }
+            Button(action: {
+                self.showAlert = true
+            }) {
+                GarmentDetailButton(text: "Buy for $\(viewModel.state.garmentDetail.price)", buttonColor: .black)
+            }
+            .alert(isPresented: $showAlert) {
+                Alert(title: Text("Added to cart!"), message: Text("You're ready to proceed to checkout and complete your order!"), dismissButton: .default(Text("Done!")))
+            }
+            .navigationBarItems(trailing:
+                                    Button(action: {
+                self.showModal = true
+            }) {
+                CartButtonView(numberOfItems: self.viewModel.state.cartItems)
+            }
+            )
+
         }
+        
     }
 }
 
