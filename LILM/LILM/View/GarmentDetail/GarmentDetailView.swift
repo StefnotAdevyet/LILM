@@ -29,12 +29,36 @@ struct GarmentDetailView: View {
     }
 
     var body: some View {
-        Text(viewModel.state.garmentDetail.title)
+        VStack {
+            GarmentImage(image: Image(viewModel.state.garmentDetail.imageName))
+            Spacer()
+                .frame(height: 30)
+            Text(viewModel.state.garmentDetail.author)
+                .foregroundColor(.gray)
+            Text(viewModel.state.garmentDetail.title)
+                .font(.system(size: 24, weight: .semibold))
+                .padding([.leading, .trailing], 20)
+            Spacer()
+                .frame(height: 20)
+            Text(viewModel.state.garmentDetail.description)
+                .lineLimit(4)
+                .padding([.leading, .trailing], 20)
+                .lineSpacing(6)
+                .foregroundColor(.gray)
+            Spacer()
+                .frame(height:20)
+            HStack(spacing: 20) {
+                ForEach(0..<viewModel.state.garmentDetail.garmentStyle.count, id: \.self) { index in
+                    Text(self.viewModel.state.garmentDetail.garmentStyle[index].description)
+                }
+                Text(viewModel.state.garmentDetail.kind)
+            }
+        }
     }
 }
 
 struct GarmentDetailView_Previews: PreviewProvider {
     static var previews: some View {
-        GarmentDetailView(service: MockService(), garmentId: 0)
+        GarmentDetailView(service: MockService(), garmentId: 6)
     }
 }
