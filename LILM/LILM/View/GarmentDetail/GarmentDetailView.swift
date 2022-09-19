@@ -62,15 +62,28 @@ struct GarmentDetailView: View {
                 Alert(title: Text("Added to cart!"), message: Text("You're ready to proceed to checkout and complete your order!"), dismissButton: .default(Text("Done!")))
             }
             .navigationBarItems(trailing:
-                                    Button(action: {
-                self.showModal = true
-            }) {
-                CartButtonView(numberOfItems: self.viewModel.state.cartItems)
-            }
-            )
+                Button(action: {
+                    self.showModal = true
+                }) {
+                    CartButtonView(numberOfItems: self.viewModel.state.cartItems)
+                }.sheet(isPresented: self.$showModal, onDismiss: { self.reload() }) {
+                    CartView(service: self.viewModel.state.service, showModal: self.$showModal)
+                })
+            .navigationBarTitle(Text(""), displayMode: .inline)
+            
 
         }
         
+    }
+}
+
+private extension GarmentDetailView {
+    func addToCart() {
+        viewModel.trigger(.addGarmentToCart)
+    }
+
+    func reload() {
+        viewModel.trigger(.reloadState)
     }
 }
 

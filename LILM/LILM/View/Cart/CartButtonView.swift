@@ -12,10 +12,10 @@ struct CartButtonView: View {
 
     var body: some View {
         VStack {
-            Image(systemName: "cart")
+            Image(systemName: "cart.fill")
                 .resizable()
                 .scaledToFit()
-                .frame(width: 50, height: 50, alignment: .bottom)
+                .frame(width: 32, height: 32, alignment: .bottom)
                 .foregroundColor(.black)
                 .overlay(ImageOverlay(numberOfItems: numberOfItems), alignment: .center)
             Spacer()
@@ -29,8 +29,8 @@ struct ImageOverlay: View {
         var body: some View {
             ZStack {
                 Text(String(numberOfItems))
-                    .font(.system(size: 13, weight: .bold, design: .serif))
-                    .foregroundColor(.black)
+                    .font(.system(size: 10, weight: .bold, design: .monospaced))
+                    .foregroundColor(.white)
                     .padding(1)
             }
         }

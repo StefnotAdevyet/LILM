@@ -10,6 +10,9 @@
 		8B3827FD28D8194600800253 /* GarmentDetailLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B3827FC28D8194600800253 /* GarmentDetailLabel.swift */; };
 		8B3827FF28D8195800800253 /* GarmentDetailButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B3827FE28D8195800800253 /* GarmentDetailButton.swift */; };
 		8B38280128D8266F00800253 /* CartButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B38280028D8266F00800253 /* CartButtonView.swift */; };
+		8B38280328D8D18300800253 /* CartRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B38280228D8D18300800253 /* CartRow.swift */; };
+		8B38280528D8DB0E00800253 /* CartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B38280428D8DB0E00800253 /* CartView.swift */; };
+		8B38280728D8DB7700800253 /* CartViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B38280628D8DB7700800253 /* CartViewModel.swift */; };
 		8BE4255928D7781900AF5BEE /* LILMApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BE4255828D7781900AF5BEE /* LILMApp.swift */; };
 		8BE4255B28D7781900AF5BEE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BE4255A28D7781900AF5BEE /* ContentView.swift */; };
 		8BE4255D28D7781B00AF5BEE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8BE4255C28D7781B00AF5BEE /* Assets.xcassets */; };
@@ -35,6 +38,9 @@
 		8B3827FC28D8194600800253 /* GarmentDetailLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GarmentDetailLabel.swift; sourceTree = "<group>"; };
 		8B3827FE28D8195800800253 /* GarmentDetailButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GarmentDetailButton.swift; sourceTree = "<group>"; };
 		8B38280028D8266F00800253 /* CartButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartButtonView.swift; sourceTree = "<group>"; };
+		8B38280228D8D18300800253 /* CartRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartRow.swift; sourceTree = "<group>"; };
+		8B38280428D8DB0E00800253 /* CartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartView.swift; sourceTree = "<group>"; };
+		8B38280628D8DB7700800253 /* CartViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartViewModel.swift; sourceTree = "<group>"; };
 		8BE4255528D7781900AF5BEE /* LILM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LILM.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8BE4255828D7781900AF5BEE /* LILMApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LILMApp.swift; sourceTree = "<group>"; };
 		8BE4255A28D7781900AF5BEE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -173,6 +179,9 @@
 			isa = PBXGroup;
 			children = (
 				8B38280028D8266F00800253 /* CartButtonView.swift */,
+				8B38280228D8D18300800253 /* CartRow.swift */,
+				8B38280428D8DB0E00800253 /* CartView.swift */,
+				8B38280628D8DB7700800253 /* CartViewModel.swift */,
 			);
 			path = Cart;
 			sourceTree = "<group>";
@@ -253,13 +262,16 @@
 				8BE4257E28D7A5B400AF5BEE /* GarmentImage.swift in Sources */,
 				8BE4258228D7A87C00AF5BEE /* GarmentListViewModel.swift in Sources */,
 				8BE4257528D7968B00AF5BEE /* AnyViewModel.swift in Sources */,
+				8B38280528D8DB0E00800253 /* CartView.swift in Sources */,
 				8BE4258028D7A7F400AF5BEE /* GarmentListState.swift in Sources */,
 				8BE4257A28D79CF100AF5BEE /* GarmentRow.swift in Sources */,
+				8B38280728D8DB7700800253 /* CartViewModel.swift in Sources */,
 				8BE4258428D7AA2200AF5BEE /* GarmentListView.swift in Sources */,
 				8B3827FF28D8195800800253 /* GarmentDetailButton.swift in Sources */,
 				8BE4257128D785D600AF5BEE /* MockService.swift in Sources */,
 				8BE4258C28D7F4A300AF5BEE /* GarmentDetailViewModel.swift in Sources */,
 				8BE4256F28D781C200AF5BEE /* GarmentService.swift in Sources */,
+				8B38280328D8D18300800253 /* CartRow.swift in Sources */,
 				8BE4256D28D7808800AF5BEE /* Cart.swift in Sources */,
 				8BE4256928D77CC900AF5BEE /* Garment.swift in Sources */,
 				8BE4257328D7950D00AF5BEE /* ViewModel.swift in Sources */,
