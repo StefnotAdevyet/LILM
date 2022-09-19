@@ -14,7 +14,7 @@ struct GarmentListView: View {
     var body: some View {
         NavigationView {
             List(viewModel.state.garments) { garment in
-                NavigationLink(destination: GarmentDetailView()) {
+                NavigationLink(destination: GarmentDetailView(service: self.viewModel.state.service, garmentId: garment.id)) {
                     GarmentRow(garment: garment)
                 }
 

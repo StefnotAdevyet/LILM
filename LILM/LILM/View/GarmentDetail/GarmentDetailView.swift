@@ -19,13 +19,22 @@ enum GarmentDetailInput {
 }
 
 struct GarmentDetailView: View {
+    @ObservedObject var viewModel: AnyViewModel<GarmentDetailState, GarmentDetailInput>
+    
+    @State private var showModal = false
+    @State private var showAlert = false
+    
+    init(service: GarmentService, garmentId: Int) {
+        self.viewModel = AnyViewModel(GarmentDetailViewModel(service: service, id: garmentId))
+    }
+
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        Text(viewModel.state.garmentDetail.title)
     }
 }
 
 struct GarmentDetailView_Previews: PreviewProvider {
     static var previews: some View {
-        GarmentDetailView()
+        GarmentDetailView(service: MockService(), garmentId: 0)
     }
 }

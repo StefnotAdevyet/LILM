@@ -25,6 +25,7 @@
 		8BE4258228D7A87C00AF5BEE /* GarmentListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BE4258128D7A87C00AF5BEE /* GarmentListViewModel.swift */; };
 		8BE4258428D7AA2200AF5BEE /* GarmentListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BE4258328D7AA2200AF5BEE /* GarmentListView.swift */; };
 		8BE4258828D7C56F00AF5BEE /* GarmentDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BE4258728D7C56F00AF5BEE /* GarmentDetailView.swift */; };
+		8BE4258C28D7F4A300AF5BEE /* GarmentDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BE4258B28D7F4A300AF5BEE /* GarmentDetailViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,6 +48,7 @@
 		8BE4258128D7A87C00AF5BEE /* GarmentListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GarmentListViewModel.swift; sourceTree = "<group>"; };
 		8BE4258328D7AA2200AF5BEE /* GarmentListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GarmentListView.swift; sourceTree = "<group>"; };
 		8BE4258728D7C56F00AF5BEE /* GarmentDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GarmentDetailView.swift; sourceTree = "<group>"; };
+		8BE4258B28D7F4A300AF5BEE /* GarmentDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GarmentDetailViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -154,6 +156,7 @@
 			isa = PBXGroup;
 			children = (
 				8BE4258728D7C56F00AF5BEE /* GarmentDetailView.swift */,
+				8BE4258B28D7F4A300AF5BEE /* GarmentDetailViewModel.swift */,
 			);
 			path = GarmentDetail;
 			sourceTree = "<group>";
@@ -244,6 +247,7 @@
 				8BE4257A28D79CF100AF5BEE /* GarmentRow.swift in Sources */,
 				8BE4258428D7AA2200AF5BEE /* GarmentListView.swift in Sources */,
 				8BE4257128D785D600AF5BEE /* MockService.swift in Sources */,
+				8BE4258C28D7F4A300AF5BEE /* GarmentDetailViewModel.swift in Sources */,
 				8BE4256F28D781C200AF5BEE /* GarmentService.swift in Sources */,
 				8BE4256D28D7808800AF5BEE /* Cart.swift in Sources */,
 				8BE4256928D77CC900AF5BEE /* Garment.swift in Sources */,
