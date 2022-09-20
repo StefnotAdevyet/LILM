@@ -7,6 +7,10 @@
 
 import SwiftUI
 
+struct GarmentListState {
+    var service: GarmentService
+    var garments: [Garment]
+}
 
 struct GarmentListView: View {
     @ObservedObject var viewModel: AnyViewModel<GarmentListState, Never>

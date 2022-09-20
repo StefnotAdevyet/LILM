@@ -33,7 +33,7 @@ struct GarmentDetailView: View {
             GarmentImage(image: Image(viewModel.state.garmentDetail.imageName))
             Spacer()
                 .frame(height: 30)
-            Text(viewModel.state.garmentDetail.author)
+            Text(viewModel.state.garmentDetail.designer)
                 .foregroundColor(.gray)
             Text(viewModel.state.garmentDetail.title)
                 .font(.system(size: 24, weight: .semibold))
@@ -70,10 +70,7 @@ struct GarmentDetailView: View {
                     CartView(service: self.viewModel.state.service, showModal: self.$showModal)
                 })
             .navigationBarTitle(Text(""), displayMode: .inline)
-            
-
         }
-        
     }
 }
 
