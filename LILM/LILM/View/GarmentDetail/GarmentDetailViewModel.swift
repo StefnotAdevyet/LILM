@@ -20,10 +20,10 @@ class GarmentDetailViewModel: ViewModel {
     func trigger(_ input: GarmentDetailInput) {
         switch input {
         case .addGarmentToCart:
-            state.service.addToCart(garmentId: state.garmentDetail.bookId)
+            state.service.addToCart(garmentId: state.garmentDetail.garmentId)
             state.cartItems = state.service.numberofCartItems()
         case .reloadState:
-            state.garmentDetail = state.service.garmentDetails(garmentId: state.garmentDetail.bookId)
+            state.garmentDetail = state.service.garmentDetails(garmentId: state.garmentDetail.garmentId)
             state.cartItems = state.service.numberofCartItems()
         }
     }

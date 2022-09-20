@@ -9,7 +9,7 @@ import Foundation
 
 struct GarmentDetail {
     var id: String
-    var bookId: Int
+    var garmentId: Int
     var designer: String
     var title: String
     var price: Double

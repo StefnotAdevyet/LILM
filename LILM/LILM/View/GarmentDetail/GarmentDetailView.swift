@@ -55,6 +55,7 @@ struct GarmentDetailView: View {
             }
             Button(action: {
                 self.showAlert = true
+                self.addToCart()
             }) {
                 GarmentDetailButton(text: "Buy for $\(viewModel.state.garmentDetail.price)", buttonColor: .black)
             }
